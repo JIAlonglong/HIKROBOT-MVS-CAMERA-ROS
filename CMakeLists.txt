@@ -17,7 +17,7 @@ catkin_package(
  
 )
 
-find_package(OpenCV 3.2.0 REQUIRED)
+find_package(OpenCV REQUIRED)
 
 include_directories(
   ${catkin_INCLUDE_DIRS}
@@ -28,6 +28,7 @@ include_directories(
 
 LINK_DIRECTORIES(
 /opt/MVS/lib/64/
+~/SDK_Mv3dRgbd_V1.0.0_Linux_220622_837455/Lib/linux64/
 )
 
 add_executable(${PROJECT_NAME}
